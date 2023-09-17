@@ -1,12 +1,15 @@
 import { GET_CLIENTS } from '../quiries/client-quiries'
 import {useQuery} from '@apollo/client'
 import Spinner from './Spinner'
-import ClientRow from './ClientRow'
+import ClientRow from './ClientRow';
+
+
 
 
 export default function Clients() {
 
-  const {loading,error, data} = useQuery(GET_CLIENTS)
+  const {loading,error, data} = useQuery(GET_CLIENTS);
+  
 
    if(loading) return <Spinner />;
    if(error) return <p>Something went wrong!</p>
@@ -15,7 +18,7 @@ export default function Clients() {
    <>
    {!loading && !error &&
    ( 
-   <table class="table bg- table-hover mt-3">
+   <table className="table bg- table-hover mt-3">
   <thead>
     <tr>
       <th scope="col">id</th>
