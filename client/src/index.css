@@ -1,0 +1,84 @@
+/* Custom Bootstrap Variables */
+:root {
+  --bg-color: #6E6E6E; /* Dark Grey background color */
+  --primary-color: #BAFF39; /* Primary color */
+  --text-color: #ffffff; /* White text color */
+}
+
+/* Reset default margin and padding */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Georgia', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-color); /* Use the custom background color variable */
+}
+
+/* Use a monospace font for code */
+code {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Style the navbar brand */
+.navbar-brand {
+  color: var(--text-color); /* Use the custom text color variable */
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+/* Style buttons */
+.btn {
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, opacity 0.3s;
+}
+
+/* Primary button */
+.btn-primary,
+.bg-primary {
+  background-color: var(--primary-color); /* Use the custom primary color variable */
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.btn-primary:hover {
+  background-color: darken(var(--primary-color), 10%); /* Slightly darker on hover */
+  opacity: 0.9;
+}
+
+/* Secondary button */
+.btn-secondary {
+  background-color: #aaaaaaf9; /* Muted orange for contrast */
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.btn-secondary:hover {
+  background-color: #aaaaaa78; /* Slightly darker on hover */
+  opacity: 0.9;
+}
+
+/* Add some space to icons */
+.icon {
+  margin-right: 8px;
+  color: #BAFF39;
+  height: 40px;
+  width: 40px;
+}
+
+.accent{
+  color: #BAFF39;
+}
+
+
+
