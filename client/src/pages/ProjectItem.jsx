@@ -4,6 +4,7 @@ import { useParams,Link } from 'react-router-dom';
 import Spinner from '../components/Spinner';
 import { useQuery } from '@apollo/client';
 import { GET_PROJECT } from '../quiries/projectQuiries';
+import DeleteProjectButton from '../components/DeleteProjectButton';
 
 
 export default function ProjectItem() {
@@ -26,7 +27,7 @@ export default function ProjectItem() {
             <h4 className='mt-3'>Project Status</h4>
             <p>{data.project.status}</p>
             <ClientInfo client={data.project.client} />
-
+           <DeleteProjectButton projectId={data.project.id} />
             </div>}
     </div>
   )
